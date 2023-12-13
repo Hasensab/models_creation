@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            text-align: center;
+            border-collapse: collapse;
+            width: 250px;
+            height: 200px;
+            font-family: 'Courier New', Courier, monospace;
+
+        }
+        #hai{
+            color:coral
+        }
+    </style>
+    
+</head>
+<body>
+    <center>
+        <h1 style="color:blue"><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            text-align: center;
+            border-collapse: collapse;
+            width: 150px;
+            height: 150px;
+            font-family: 'Courier New', Courier, monospace;
+            color: white;
+
+        }
+        #hai{
+            color:black;
+        }
+        #b{
+            color: black;
+        }
+    </style>
+    
+</head>
+<body bgcolor="cornsilk">
+    <center>
+        <h1 style="color:rgb(10, 10, 148)">Display_Webpages</h1>
+        <table border="2px dottes black">
+            <tr id="b">
+                <th>pk</th>
+                <th>topic_name</th>
+                <th>name</th>
+                <th>url</th>
+                <th>developer_name</th>
+            </tr>
+            {% for wo in webpages %}
+            <tr id="hai">
+                <td>{{wo.pk}}</td>
+                <td>{{wo.topic_name}}</td>
+                <td>{{wo.name}}</td>
+                <td>{{wo.url}}</td>
+                <td>{{wo.developer_name}}</td>
+            </tr>
+            {% endfor %}
+            
+    
+    
+    
+    
+    
+    
+    
+        </table>
+
+
+
+
+
+
+    </center>
+    
+
+    
+</body>
+</html>

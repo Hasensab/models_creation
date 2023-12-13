@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            text-align: center;
+            border-collapse: collapse;
+            width: 250px;
+            height: 200px;
+            font-family: 'Courier New', Courier, monospace;
+            
+
+        }
+        #hai{
+            color:black;
+            
+        }
+    </style>
+    
+</head>
+<body bgcolor="cornsilk">
+    <center>
+        <h1 style="color:blue">Display_Topic</h1>
+        <table border="3px solid blue">
+            <tr>
+                <th>topic_name</th>
+            </tr>
+            {% for to in topics %}
+            <tr id="hai">
+                <td>{{to.topic_name}}</td>
+            </tr>
+            {% endfor %}
+            
+    
+    
+    
+    
+    
+    
+    
+        </table>
+
+
+
+
+
+
+    </center>
+    
+</body>
+</html>
