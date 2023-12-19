@@ -11,8 +11,16 @@
             width: 500px;
             height: 200px;
             font-family: 'Courier New', Courier, monospace;
-            
+            border-radius: 20%;
 
+        }
+        th
+        {
+            background-color: darkcyan;
+        }
+        td
+        {
+            background-color: aquamarine;
         }
         #hai{
             color:black;
@@ -26,12 +34,14 @@
         <h1 style="color:blue">Display_AccessRecord</h1>
         <table border="3px solid blue">
             <tr>
+                <th>pk</th>
                 <th>name</th>
                 <th>date</th>
                 <th>author</th>
             </tr>
             {% for ao in accessrecord %}
             <tr id="hai">
+                <td>{{ ao.pk }}</td>
                 <td>{{ao.name}}</td>
                 <td>{{ao.date}}</td>
                 <td>{{ao.author}}</td>
